@@ -1,7 +1,7 @@
-module github.com\juang77\Gabotor
+module github.com/juang77/Gabotor
 
-go 1.15
+go 1.13
 
-require(
+require (
 
 )
