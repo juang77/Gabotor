@@ -15,7 +15,7 @@ func EliminarTweet(w http.ResponseWriter, r *http.Request) {
 	}
 	err := bd.BorroTweet(ID, IDUsuario)
 	if err != nil {
-		http.Error(w, "Ocurrió un error al intentar corrar el tweet"+err.Error(), http.StatusBadRequest)
+		http.Error(w, "Ocurrió un error al intentar crear el tweet "+err.Error(), http.StatusBadRequest)
 		return
 	}
 	w.Header().Set("Content-Type", "application/json")
